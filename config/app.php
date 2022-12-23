@@ -1,5 +1,6 @@
 <?php
 
+use App\Tempo\Provider\TempoServiceProvider;
 use App\Toggl\Providers\TogglServiceProvider;
 
 return [
@@ -58,6 +59,7 @@ return [
     'providers' => [
         App\Providers\AppServiceProvider::class,
         TogglServiceProvider::class,
+        TempoServiceProvider::class,
     ],
 
 ];
