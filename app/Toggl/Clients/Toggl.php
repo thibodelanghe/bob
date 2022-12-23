@@ -27,8 +27,10 @@ class Toggl implements Client
             ->json();
     }
 
-    public function post()
+    public function post(string $url, array $data = [])
     {
-        // TODO: Implement post() method.
+        return $this->client->post($url, $data)
+            ->throw()
+            ->json();
     }
 }
