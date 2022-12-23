@@ -10,7 +10,7 @@
          stopOnFailure="false">
     <testsuites>
         <testsuite name="Feature">
-            <directory suffix="Test.php">./</directory>
+            <directory suffix="Test.php">./app</directory>
         </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
