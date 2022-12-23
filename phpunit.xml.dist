@@ -10,10 +10,7 @@
          stopOnFailure="false">
     <testsuites>
         <testsuite name="Feature">
-            <directory suffix="Test.php">./tests/Feature</directory>
-        </testsuite>
-        <testsuite name="Unit">
-            <directory suffix="Test.php">./tests/Unit</directory>
+            <directory suffix="Test.php">./app</directory>
         </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
@@ -21,4 +18,8 @@
             <directory suffix=".php">./app</directory>
         </include>
     </coverage>
+    <php>
+        <env name="TOGGL_BASE_URL" value="http://toggle.be" />
+        <env name="TOGGL_TOKEN" value="token" />
+    </php>
 </phpunit>
