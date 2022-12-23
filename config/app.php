@@ -1,5 +1,7 @@
 <?php
 
+use App\Toggl\Providers\TogglServiceProvider;
+
 return [
 
     /*
@@ -55,6 +57,7 @@ return [
 
     'providers' => [
         App\Providers\AppServiceProvider::class,
+        TogglServiceProvider::class,
     ],
 
 ];
